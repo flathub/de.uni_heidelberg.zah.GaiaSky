@@ -24,7 +24,7 @@
   </description>
   
    <releases>
-      <release version="3.0.0" date="2020-12-02" urgency="high">
+      <release version="3.0.1" date="2020-12-10" urgency="high">
         <url>https://gitlab.com/langurmonkey/gaiasky/blob/master/CHANGELOG.md</url>
       </release>
   </releases>
