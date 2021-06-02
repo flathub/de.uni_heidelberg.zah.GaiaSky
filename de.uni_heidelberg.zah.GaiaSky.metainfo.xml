@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>de.uni_heidelberg.zah.GaiaSky</id>
-  <url type="homepage">https://zah.uni-heidelberg.de/institutes/ari/gaia/outreach/gaiasky/</url>
-  <url type="help">https://gaia.ari.uni-heidelberg.de/gaiasky/docs/html/latest/</url>
+  <url type="homepage">https://zah.uni-heidelberg.de/gaia/outreach/gaiasky/</url>
+  <url type="help">https://gaia.ari.uni-heidelberg.de/gaiasky/docs</url>
   <url type="bugtracker">https://gitlab.com/langurmonkey/gaiasky/-/issues</url>
   
   <name>Gaia Sky</name>
@@ -25,7 +25,7 @@
   </description>
   
    <releases>
-      <release version="3.0.1" date="2020-12-10" urgency="high">
+      <release version="3.0.3" date="2021-02-25" urgency="high">
         <url>https://gitlab.com/langurmonkey/gaiasky/blob/master/CHANGELOG.md</url>
       </release>
   </releases>
