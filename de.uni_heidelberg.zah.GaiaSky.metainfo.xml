@@ -87,16 +87,16 @@
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00004.jpg</image>
     </screenshot>
     <screenshot>
-      <caption>Panorama mode</caption>
+      <caption>Panorama mode (Hammer projection)</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00012.jpg</image>
+    </screenshot>
+    <screenshot>
+      <caption>Panorama mode (Spherical projection)</caption>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20210225/00000.jpg</image>
     </screenshot>
     <screenshot>
       <caption>Scripting</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20200706/00014.jpg</image>
-    </screenshot>
-    <screenshot>
-      <caption>Scripting</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20210225/00000.jpg</image>
     </screenshot>
   </screenshots>
 </component>
