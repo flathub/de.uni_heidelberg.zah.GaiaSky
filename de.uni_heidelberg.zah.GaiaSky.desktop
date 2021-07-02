@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Gaia Sky
-Comment=Gaia Sky 3D Universe software
+Comment=Open Source 3D universe simulator for desktop and VR with support for more than a billion objects
 Exec=gaiasky
 Icon=de.uni_heidelberg.zah.GaiaSky
 Terminal=false
