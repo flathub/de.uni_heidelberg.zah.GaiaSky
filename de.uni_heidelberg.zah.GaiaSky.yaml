@@ -1,6 +1,6 @@
 app-id: de.uni_heidelberg.zah.GaiaSky
 runtime: org.freedesktop.Platform
-runtime-version: '20.08'
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions: [org.freedesktop.Sdk.Extension.openjdk]
 command: gaiasky
@@ -35,8 +35,8 @@ modules:
        - install -D de.uni_heidelberg.zah.GaiaSky.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
     sources:
       - type: archive
-        url: https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.1.4.6ba45ec21/gaiasky-3.1.4.6ba45ec21.tar.gz
-        sha256: 08d2e78f27b09256ff92d997f4d9f0fa61de2f19be6e751d77b965458d9601e2
+        url: https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/latest/gaiasky-3.1.5.ee324a4e6.tar.gz
+        sha256: 080092dea99c285347bffd1543648d5fed447b09c000bac81143396ebce10aec
       - type: file
         path: de.uni_heidelberg.zah.GaiaSky.desktop
       - type: file
