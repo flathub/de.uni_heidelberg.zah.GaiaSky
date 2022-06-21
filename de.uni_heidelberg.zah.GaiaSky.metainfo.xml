@@ -3,7 +3,7 @@
   <id>de.uni_heidelberg.zah.GaiaSky</id>
   <url type="homepage">https://zah.uni-heidelberg.de/gaia/outreach/gaiasky/</url>
   <url type="help">https://gaia.ari.uni-heidelberg.de/gaiasky/docs</url>
-  <url type="bugtracker">https://gitlab.com/langurmonkey/gaiasky/-/issues</url>
+  <url type="bugtracker">https://gitlab.com/gaiasky/gaiasky/-/issues</url>
 
   <name>Gaia Sky</name>
   <summary>Open Source 3D universe simulator for desktop and VR with support for more than a billion objects</summary>
@@ -25,8 +25,8 @@
   </description>
 
   <releases>
-    <release version="3.2.0" date="2022-06-07" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.2.0.84c0fc728/releasenotes.html</url>
+    <release version="3.2.1" date="2022-06-21" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.2.1.41e4b0a5b/releasenotes.html</url>
     </release>
   </releases>
 
