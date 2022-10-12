@@ -6,7 +6,7 @@ sdk-extensions: [org.freedesktop.Sdk.Extension.openjdk]
 command: gaiasky
 finish-args:
   - --socket=x11
-  - --device=dri
+  - --device=all
   - --socket=pulseaudio
   - --share=ipc
   - --share=network
