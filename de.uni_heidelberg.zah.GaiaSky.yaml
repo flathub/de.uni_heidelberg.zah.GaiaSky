@@ -36,7 +36,7 @@ modules:
     sources:
       - type: archive
         url: https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/latest/gaiasky-3.3.1.d6f853125.tar.gz
-        sha256: fc1ffef9eea500dd9feafbc8e67c6c83648987ce1f9a31903c34bbb70cbfa137
+        sha256: 80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880
       - type: file
         path: de.uni_heidelberg.zah.GaiaSky.desktop
       - type: file
