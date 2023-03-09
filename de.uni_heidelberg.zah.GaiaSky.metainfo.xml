@@ -25,8 +25,8 @@
   </description>
 
   <releases>
-    <release version="3.4.0" date="2023-02-13" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.4.0.33ecc89f4/releasenotes.html</url>
+    <release version="3.4.1" date="2023-03-09" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.4.1.0cf299d94/releasenotes.html</url>
     </release>
   </releases>
 
@@ -95,12 +95,20 @@
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00012.jpg</image>
     </screenshot>
     <screenshot>
-      <caption>Panorama mode (Spherical projection)</caption>
+      <caption>Panorama mode (Spherical projection) with Hipparcos stars colored by number of transits</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20210225/00000.jpg</image>
     </screenshot>
     <screenshot>
-      <caption>Scripting</caption>
+      <caption>Nice pattern between the orbits of the Earth and Venus, with scripting</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20200706/00014.jpg</image>
+    </screenshot>
+    <screenshot>
+      <caption>Exploring Mars in Virtual Reality</caption>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230303/00007.jpg</image>
+    </screenshot>
+    <screenshot>
+      <caption>Close to Gaia in Virtual Reality</caption>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230303/00006.jpg</image>
     </screenshot>
   </screenshots>
 </component>

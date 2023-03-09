@@ -20,10 +20,11 @@ modules:
   - name: gaiasky
     buildsystem: simple
     build-commands:
-       - mkdir -p /app/bin/bookmarks/ /app/bin/conf/ /app/bin/i18n/ /app/bin/lib/ /app/bin/mappings/ /app/bin/music/ /app/bin/scripts/
+       - mkdir -p /app/bin/bookmarks/ /app/bin/conf/ /app/bin/i18n/ /app/bin/icon/ /app/bin/lib/ /app/bin/mappings/ /app/bin/music/ /app/bin/scripts/
        - cp -R bookmarks/* /app/bin/bookmarks/
        - cp -R conf/* /app/bin/conf/
        - cp -R i18n/* /app/bin/i18n/
+       - cp -R icon/* /app/bin/icon/
        - cp -R lib/* /app/bin/lib/
        - cp -R mappings/* /app/bin/mappings/
        - cp -R scripts/* /app/bin/scripts/
@@ -35,8 +36,8 @@ modules:
        - install -D de.uni_heidelberg.zah.GaiaSky.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
     sources:
       - type: archive
-        url: https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.4.0.33ecc89f4/gaiasky-3.4.0.33ecc89f4.tar.gz
-        sha256: 3000267734d51835dd57101638950c03cff3a02d0ba6bec027ef1d2370142c58
+        url: https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.4.1.0cf299d94/gaiasky-3.4.1.0cf299d94.tar.gz
+        sha256: d3d1444e8cceec89f307ee59ebd9621113666cf8f08cdeebda456f85aa776148
       - type: file
         path: de.uni_heidelberg.zah.GaiaSky.desktop
       - type: file
