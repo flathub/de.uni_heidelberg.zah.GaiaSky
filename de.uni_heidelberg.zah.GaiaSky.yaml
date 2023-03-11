@@ -1,8 +1,8 @@
 app-id: de.uni_heidelberg.zah.GaiaSky
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
-sdk-extensions: [org.freedesktop.Sdk.Extension.openjdk]
+sdk-extensions: [org.freedesktop.Sdk.Extension.openjdk17]
 command: gaiasky
 finish-args:
   - --socket=x11
@@ -15,7 +15,7 @@ finish-args:
 modules:
   - name: openjdk
     buildsystem: simple
-    build-commands: [/usr/lib/sdk/openjdk/install.sh]
+    build-commands: [/usr/lib/sdk/openjdk17/install.sh]
 
   - name: gaiasky
     buildsystem: simple
