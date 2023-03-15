@@ -24,7 +24,6 @@ modules:
        - cp -R bookmarks/* /app/bin/bookmarks/
        - cp -R conf/* /app/bin/conf/
        - cp -R i18n/* /app/bin/i18n/
-       - cp -R icon/* /app/bin/icon/
        - cp -R lib/* /app/bin/lib/
        - cp -R mappings/* /app/bin/mappings/
        - cp -R scripts/* /app/bin/scripts/
@@ -36,8 +35,8 @@ modules:
        - install -D de.uni_heidelberg.zah.GaiaSky.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
     sources:
       - type: archive
-        url: https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.4.1.0cf299d94/gaiasky-3.4.1.0cf299d94.tar.gz
-        sha256: d3d1444e8cceec89f307ee59ebd9621113666cf8f08cdeebda456f85aa776148
+        url: https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.4.2.041928e7c/gaiasky-3.4.2.041928e7c.tar.gz
+        sha256: cae91ce792427234a0f5d3c144cc428287ceea7bf1168e233b26a7b16141cce9
       - type: file
         path: de.uni_heidelberg.zah.GaiaSky.desktop
       - type: file
