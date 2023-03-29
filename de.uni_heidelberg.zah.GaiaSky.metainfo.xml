@@ -35,10 +35,6 @@
   <launchable type="desktop-id">de.uni_heidelberg.zah.GaiaSky.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <caption>Gaia Sky</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00011.jpg</image>
-    </screenshot>
-    <screenshot>
       <caption>Rendering of Earth's surface, clouds and atmosphere</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00001.jpg</image>
     </screenshot>
