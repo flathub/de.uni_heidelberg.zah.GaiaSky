@@ -35,8 +35,8 @@ modules:
        - install -D de.uni_heidelberg.zah.GaiaSky.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
     sources:
       - type: archive
-        url: https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.0.5b427a04f/gaiasky-3.5.0.5b427a04f.tar.gz
-        sha256: c4500234501c965c047e62720ee0156d2b9c1b9c6c69f828de992c3aef254f16
+        url: https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.1.ebd5983f4/gaiasky-3.5.1.ebd5983f4.tar.gz
+        sha256: 3c03830e79c48b1c30f3e49da0c8dde4aa5f74eacc5c0aeec4d29b8f0661a4d7
       - type: file
         path: de.uni_heidelberg.zah.GaiaSky.desktop
       - type: file
