@@ -25,8 +25,26 @@
   </description>
 
   <releases>
-    <release version="3.5.1" date="2023-07-18" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.1.ebd5983f4/releasenotes.html</url>
+    <release version="3.5.2" date="2023-07-26" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.2.f8a396004/releasenotes.html</url>
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Improve keyframes window layout, with more space for keyframes and better sizing of keyframes table.</li>
+          <li>Default to full screen for small displays, and refactor display resolution fetching process.</li>
+          <li>Check AMD APU code name to detect Steam Deck.</li>
+          <li>Steam Deck programmatic detection to default to full screen at startup.</li>
+        </ul>
+        <p>Bug fixes:</p>
+        <ul>
+          <li>Exporting keyframes to camera path missed the very last frame.</li>
+          <li>Restore line rendering in keyframes, lost in a regression during the line refactoring campaing.</li>
+          <li>Only deactivate main mouse/kbd listener if the current dialog is modal.</li>
+          <li>Full-screen log item in translation files.</li>
+          <li>Visual layout and information structure in about window, system tab.</li>
+          <li>Apply patch provided by luzpaz fixing many typos in comments and strings.</li>
+        </ul>
+      </description>
     </release>
   </releases>
 
