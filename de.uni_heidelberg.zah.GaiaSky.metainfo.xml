@@ -27,39 +27,6 @@
   <releases>
     <release version="3.5.3" date="14" urgency="high">
       <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.3.d076b1659/releasenotes.html</url>
-      <description>
-        <p>Features</p>
-        <ul>
-          <li>use quaternion spherical linear interpolation for the camera orientation when exporting keyframes. The old setting ‘camrecorder &gt; keyframe &gt; orientation’ is not used anymore.</li>
-          <li>use quaternion interpolation for the camera transition methods in the scripting API implementation.</li>
-          <li>add direct playback capability to camera keyframe system.</li>
-          <li>keyframe system to use new camera path object in export operation.</li>
-          <li>add skip back/fwd, step back/fwd, play/pause buttons and timeline slider.</li>
-          <li>move keyframes logic and model to keyframe manager.</li>
-          <li>add tooltips to keyframe playback buttons.</li>
-          <li>add check for keyframe timings (t_kf * fps % 1 == 0) and respective notice.</li>
-          <li>add new visibility type ‘Keyframes’, which controls the keyframe points and lines. Add new keyboard mapping SHIFT+K to toggle it.</li>
-          <li>move <code>onlyBody</code> trajectory attribute to <code>bodyRepresentation</code>, which is an enum that enables the representation of only body, only orbit or both. The <code>onlyBody</code> attribute is still kept as a proxy. Rename <code>pointColor</code> to <code>bodyColor</code> in trajectories. <code>pointColor</code> is kept as an alias.</li>
-          <li>move from buffered file-backed recording and playback to model-backed solutions for the camrecorder. This means that, during recording, the data is captured and stored in memory and persisted to disk when the recording finishes. During playback, the data is loaded to memory at once at the beginning and played from there.</li>
-          <li>new welcome screen title design and splash.</li>
-        </ul>
-        <p>Bug Fixes</p>
-        <ul>
-          <li>mismatch in bundled JRE versions in install4j script. Fixes <a href="https://codeberg.org/gaiasky/gaiasky/issues/737">#737</a>.</li>
-          <li>clean editing keyframe on deletion. Fixes <a href="https://codeberg.org/gaiasky/gaiasky/issues/734">#734</a>.</li>
-          <li>check keyboard focus state when polling cursors in main mouse/kdb listener. Fixes <a href="https://codeberg.org/gaiasky/gaiasky/issues/733">#733</a>.</li>
-          <li>exit JVM process with a proper status code depending on application state.</li>
-          <li>glitches and artifacts in atmosphere ground tessellation shader.</li>
-          <li>base opacity applied to model bodies when rendered as billboards.</li>
-          <li>update minimum required JRE in install4j script to 15. Fix version tag.</li>
-          <li>use camrecorder target frame rate instead of frame output system one in keyframes.</li>
-          <li>raymarching event description.</li>
-          <li>small improvements in UCD parser for IDs and magnitudes.</li>
-          <li>do not preemptively check display resolution in macOS, as it usually runs a headless JVM.</li>
-          <li>do not render keyframe lines/points when camcorder is playing. Fix index issue in path linear interpolator. Fixes <a href="https://codeberg.org/gaiasky/gaiasky/issues/735">#735</a>.</li>
-          <li>atmosphere object distance falloff.</li>
-        </ul>
-      </description>
     </release>
   </releases>
 
