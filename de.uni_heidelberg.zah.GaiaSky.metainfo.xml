@@ -16,52 +16,32 @@
     <control>pointing</control>
     <control>keyboard</control>
     <control>gamepad</control>
-  </recommends>
+    </recommends>
 
   <description>
     <p>
       Gaia Sky is a real-time, 3D, astronomy visualisation software for desktop and VR that runs on Linux, Windows and macOS. It is developed in the framework of ESA&apos;s Gaia mission to chart about 1 billion stars of our Galaxy in the Gaia group of the Astronomisches Rechen-Institut (ZAH, Universität Heidelberg). Explore the Solar System, the Milky Way or even the most distant galaxies of the Universe.
-    </p>
-  </description>
+      </p>
+    </description>
 
   <releases>
-    <release version="3.5.3" date="2023-09-14" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.3.d076b1659/releasenotes.html</url>
+
+    <release version="3.5.4" date="2023-09-20" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.4.36b53b006/releasenotes.html</url>
       <description>
         <p>Features</p>
         <ul>
-          <li>use quaternion spherical linear interpolation for the camera orientation when exporting keyframes. The old setting ‘camrecorder &gt; keyframe &gt; orientation’ is not used anymore.</li>
-          <li>use quaternion interpolation for the camera transition methods in the scripting API implementation.</li>
-          <li>add direct playback capability to camera keyframe system.</li>
-          <li>keyframe system to use new camera path object in export operation.</li>
-          <li>add skip back/fwd, step back/fwd, play/pause buttons and timeline slider.</li>
-          <li>move keyframes logic and model to keyframe manager.</li>
-          <li>add tooltips to keyframe playback buttons.</li>
-          <li>add check for keyframe timings (t_kf * fps % 1 == 0) and respective notice.</li>
-          <li>add new visibility type ‘Keyframes’, which controls the keyframe points and lines. Add new keyboard mapping SHIFT+K to toggle it.</li>
-          <li>move <code>onlyBody</code> trajectory attribute to <code>bodyRepresentation</code>, which is an enum that enables the representation of only body, only orbit or both. The <code>onlyBody</code> attribute is still kept as a proxy. Rename <code>pointColor</code> to <code>bodyColor</code> in trajectories. <code>pointColor</code> is kept as an alias.</li>
-          <li>move from buffered file-backed recording and playback to model-backed solutions for the camrecorder. This means that, during recording, the data is captured and stored in memory and persisted to disk when the recording finishes. During playback, the data is loaded to memory at once at the beginning and played from there.</li>
-          <li>new welcome screen title design and splash.</li>
-        </ul>
-        <p>Bug Fixes</p>
-        <ul>
-          <li>mismatch in bundled JRE versions in install4j script.</li>
-          <li>clean editing keyframe on deletion.</li>
-          <li>check keyboard focus state when polling cursors in main mouse/kdb listener.</li>
-          <li>exit JVM process with a proper status code depending on application state.</li>
-          <li>glitches and artifacts in atmosphere ground tessellation shader.</li>
-          <li>base opacity applied to model bodies when rendered as billboards.</li>
-          <li>update minimum required JRE in install4j script to 15. Fix version tag.</li>
-          <li>use camrecorder target frame rate instead of frame output system one in keyframes.</li>
-          <li>raymarching event description.</li>
-          <li>small improvements in UCD parser for IDs and magnitudes.</li>
-          <li>do not preemptively check display resolution in macOS, as it usually runs a headless JVM.</li>
-          <li>do not render keyframe lines/points when camcorder is playing. Fix index issue in path linear interpolator.</li>
-          <li>atmosphere object distance falloff.</li>
-        </ul>
-      </description>
-    </release>
-  </releases>
+          <li>add square recursive grid style, additionally to the existing circular concentric rings.</li>
+          <li>add diagonal lines at 30 and 60 degrees to the circular recursive grid.</li>
+          <li>redesign time pane layout and widgets (warp slider, play/pause, information boxes, etc.) in controls window.</li>
+          <li>upgrade internal version numbering to include a sequence number within the revision (major.minor.revision-sequence). It should be backwards compatible, but starting with this version, internal version numbers have at least 7 digits instead of 5.</li>
+          <li>bump source version number.</li>
+          <li>refactor separator UI elements.</li>
+          <li>redesign loading screen to follow welcome screen style.</li>
+          </ul>
+        </description>
+      </release>
+    </releases>
 
   <content_rating type="oars-1.1" />
 
@@ -70,86 +50,86 @@
     <screenshot type="default">
       <caption>Rendering of Earth's surface, clouds and atmosphere</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00001.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>View of the Gaia spacecraft</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20220303/00000.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Earthrise</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00009.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Atmospheric scattering of Earth</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00004.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Black hole with accretion disk</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00014.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>SDSS galaxies</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00005.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>The inner Solar System</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00006.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Spacecraft in planetarium mode</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00011.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Io and Saturn</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00008.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Phobos and Mars</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00005.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Saturn and its moons</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00009.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Iso-surface maps</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00010.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Earth and Moon</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00002.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>A black hole orbiting a star</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00007.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>ESA's Euclid spacecraft</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00010.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>The Milky Way</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00004.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Panorama mode</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00012.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Nice pattern between the orbits of the Earth and Venus, with scripting</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20200706/00014.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Hipparcos stars colored by number of transits using scripting</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20210225/00000.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Exploring Mars in Virtual Reality</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230303/00007.jpg</image>
-    </screenshot>
+      </screenshot>
     <screenshot>
       <caption>Close to Gaia in Virtual Reality</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230303/00006.jpg</image>
-    </screenshot>
-  </screenshots>
-</component>
+      </screenshot>
+    </screenshots>
+  </component>
