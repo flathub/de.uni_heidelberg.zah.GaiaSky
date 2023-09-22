@@ -26,9 +26,18 @@
 
   <releases>
 
-    <release version="3.5.4" date="2023-09-20" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.4.36b53b006/releasenotes.html</url>
+    <release version="3.5.4-1" date="2023-09-22" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.4-1.c31b73416/releasenotes.html</url>
       <description>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>move action stuttering on some systems due to no input changes since last sync.</li>
+          <li>application title in loading screen squashes the logo.</li>
+          </ul>
+        <p>Build System</p>
+        <ul>
+          <li>set bundled JRE version to 17 instead of 20; seemingly, there are non-negligible performance issues with the JRE 20 on some configurations.</li>
+          </ul>
         <p>Features</p>
         <ul>
           <li>add square recursive grid style, additionally to the existing circular concentric rings.</li>
