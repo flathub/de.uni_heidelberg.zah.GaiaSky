@@ -26,27 +26,31 @@
 
   <releases>
 
-    <release version="3.5.4-1" date="2023-09-22" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.4-1.c31b73416/releasenotes.html</url>
+    <release version="3.5.5" date="2023-09-29" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.5.3b4d54b77/releasenotes.html</url>
       <description>
-        <p>Bug Fixes</p>
-        <ul>
-          <li>move action stuttering on some systems due to no input changes since last sync.</li>
-          <li>application title in loading screen squashes the logo.</li>
-          </ul>
-        <p>Build System</p>
-        <ul>
-          <li>set bundled JRE version to 17 instead of 20; seemingly, there are non-negligible performance issues with the JRE 20 on some configurations.</li>
-          </ul>
         <p>Features</p>
         <ul>
-          <li>add square recursive grid style, additionally to the existing circular concentric rings.</li>
-          <li>add diagonal lines at 30 and 60 degrees to the circular recursive grid.</li>
-          <li>redesign time pane layout and widgets (warp slider, play/pause, information boxes, etc.) in controls window.</li>
-          <li>upgrade internal version numbering to include a sequence number within the revision (major.minor.revision-sequence). It should be backwards compatible, but starting with this version, internal version numbers have at least 7 digits instead of 5.</li>
-          <li>bump source version number.</li>
-          <li>refactor separator UI elements.</li>
-          <li>redesign loading screen to follow welcome screen style.</li>
+          <li>add new user interface mode to replace the old controls window. The old UI is still available via a checkbox in the preferences.</li>
+          <li>add new ‘play camera path’ action, bound to <code>alt</code>+<code>c</code> by default.</li>
+          <li>controls window pane key bindings (time, camera, bookmarks, etc.) updated to not use the <code>Alt-L</code> key.</li>
+          <li>add better star close-up shader.</li>
+          <li>add new ‘Scene settings’ section in preferences window with an option to render stars as spheres.</li>
+          <li>revamp shader include directive to accept different extensions and file references in angle brackets.</li>
+          <li>move shader libraries to <code>shader/lib</code>.</li>
+          <li>retire Gaia FOV camera modes.</li>
+          <li>adjust default atmosphere exposure value.</li>
+          <li>disable fading scrollbars everywhere.</li>
+          <li>prepared PBR shaders to accept iridescence, transmission and thickness values (still inactive).</li>
+          <li>tune normal strength in tessellation shaders to map to elevation multiplier.</li>
+          </ul>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>enable full shader file names in raymarching shaders.</li>
+          <li>typo, ‘user interface resetted’ -&gt; ‘user interface reset’.</li>
+          <li>restore height sampling functionality to prevent clipping through tessellated terrain.</li>
+          <li>remove cinematic camera slow-down when close to the surface of a planet.</li>
+          <li>scale tessellation quality using the body size to prevent severe slow-downs in smaller bodies.</li>
           </ul>
         </description>
       </release>
