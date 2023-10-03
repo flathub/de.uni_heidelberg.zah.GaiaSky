@@ -26,31 +26,21 @@
 
   <releases>
 
-    <release version="3.5.5" date="2023-09-29" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.5.3b4d54b77/releasenotes.html</url>
+    <release version="3.5.5-1" date="2023-10-03" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.5-1.53d6a4f97/releasenotes.html</url>
       <description>
         <p>Features</p>
         <ul>
-          <li>add new user interface mode to replace the old controls window. The old UI is still available via a checkbox in the preferences.</li>
-          <li>add new ‘play camera path’ action, bound to <code>alt</code>+<code>c</code> by default.</li>
-          <li>controls window pane key bindings (time, camera, bookmarks, etc.) updated to not use the <code>Alt-L</code> key.</li>
-          <li>add better star close-up shader.</li>
-          <li>add new ‘Scene settings’ section in preferences window with an option to render stars as spheres.</li>
-          <li>revamp shader include directive to accept different extensions and file references in angle brackets.</li>
-          <li>move shader libraries to <code>shader/lib</code>.</li>
-          <li>retire Gaia FOV camera modes.</li>
-          <li>adjust default atmosphere exposure value.</li>
-          <li>disable fading scrollbars everywhere.</li>
-          <li>prepared PBR shaders to accept iridescence, transmission and thickness values (still inactive).</li>
-          <li>tune normal strength in tessellation shaders to map to elevation multiplier.</li>
+          <li>improve default pane background, touch up mini-map layout.</li>
+          <li>add collapsible groups and per-group ‘select all’ and ‘select none’ controls to dataset manager.</li>
+          <li>add transparency support (encoded in diffuse texture/color) to shadow maps.</li>
+          <li>add support for scattering diffuse material properties in default and tessellation shaders.</li>
+          <li>update umbra and penumbra highlight colors.</li>
           </ul>
         <p>Bug Fixes</p>
         <ul>
-          <li>enable full shader file names in raymarching shaders.</li>
-          <li>typo, ‘user interface resetted’ -&gt; ‘user interface reset’.</li>
-          <li>restore height sampling functionality to prevent clipping through tessellated terrain.</li>
-          <li>remove cinematic camera slow-down when close to the surface of a planet.</li>
-          <li>scale tessellation quality using the body size to prevent severe slow-downs in smaller bodies.</li>
+          <li>regression where all actions were printed to stdout.</li>
+          <li>unexpected and weird behaviour when spamming repeatedly left buttons in new UI.</li>
           </ul>
         </description>
       </release>
@@ -65,8 +55,8 @@
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00001.jpg</image>
       </screenshot>
     <screenshot>
-      <caption>View of the Gaia spacecraft</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20220303/00000.jpg</image>
+      <caption>View of Saturn and its rings</caption>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230929/00005.jpg</image>
       </screenshot>
     <screenshot>
       <caption>Earthrise</caption>
@@ -78,11 +68,11 @@
       </screenshot>
     <screenshot>
       <caption>Black hole with accretion disk</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00014.jpg</image>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20231002/00004.jpg</image>
       </screenshot>
     <screenshot>
       <caption>SDSS galaxies</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00005.jpg</image>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20231002/00002.jpg</image>
       </screenshot>
     <screenshot>
       <caption>The inner Solar System</caption>
@@ -90,11 +80,11 @@
       </screenshot>
     <screenshot>
       <caption>Spacecraft in planetarium mode</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00011.jpg</image>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20231002/00006.jpg</image>
       </screenshot>
     <screenshot>
-      <caption>Io and Saturn</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00008.jpg</image>
+      <caption>Solar eclipse representation on the surface of Earth</caption>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20231002/00007.jpg</image>
       </screenshot>
     <screenshot>
       <caption>Phobos and Mars</caption>
@@ -102,7 +92,7 @@
       </screenshot>
     <screenshot>
       <caption>Saturn and its moons</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00009.jpg</image>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230929/00007.jpg</image>
       </screenshot>
     <screenshot>
       <caption>Iso-surface maps</caption>
@@ -113,28 +103,12 @@
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00002.jpg</image>
       </screenshot>
     <screenshot>
-      <caption>A black hole orbiting a star</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00007.jpg</image>
-      </screenshot>
-    <screenshot>
       <caption>ESA's Euclid spacecraft</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00010.jpg</image>
       </screenshot>
     <screenshot>
       <caption>The Milky Way</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00004.jpg</image>
-      </screenshot>
-    <screenshot>
-      <caption>Panorama mode</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20201125/00012.jpg</image>
-      </screenshot>
-    <screenshot>
-      <caption>Nice pattern between the orbits of the Earth and Venus, with scripting</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20200706/00014.jpg</image>
-      </screenshot>
-    <screenshot>
-      <caption>Hipparcos stars colored by number of transits using scripting</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20210225/00000.jpg</image>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20231002/00008.jpg</image>
       </screenshot>
     <screenshot>
       <caption>Exploring Mars in Virtual Reality</caption>
