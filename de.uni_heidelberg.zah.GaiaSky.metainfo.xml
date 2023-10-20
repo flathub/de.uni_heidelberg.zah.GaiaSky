@@ -26,27 +26,51 @@
 
   <releases>
 
-    <release version="3.5.5-2" date="2023-10-04" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.5-2.f09289b66/releasenotes.html</url>
+    <release version="3.5.6" date="2023-10-20" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.6.c061e75f5/releasenotes.html</url>
       <description>
         <p>Features</p>
         <ul>
-          <li>improve default pane background, touch up mini-map layout.</li>
-          <li>add collapsible groups and per-group ‘select all’ and ‘select none’ controls to dataset manager.</li>
-          <li>add transparency support (encoded in diffuse texture/color) to shadow maps.</li>
-          <li>add support for scattering diffuse material properties in default and tessellation shaders.</li>
-          <li>update umbra and penumbra highlight colors.</li>
+          <li>add film grain filter (disabled by default).</li>
+          <li>set a maximum age for <code>.part</code> download files of 6
+            hours.</li>
+          <li>improve recursive grid with travelling pulses and a noise mask.</li>
+          <li>add ‘animate’ setting to recursive grid preferences to toggle
+            animation on and off.</li>
+          <li>add checkbox to control recursive grid animation.</li>
+          <li>add initial notice about Gaia Sky contacting the server to get the
+            dataset updates list.</li>
+          <li>improve shader compilation error handling.</li>
+          <li>enable elevation (height) representation without tessellation in a
+            new ‘regular’ mode. This is the new default mode, as tessellation is a
+            bit to taxing on old and integrated GPUs.</li>
+          <li>discontinue parallax mapping elevation type; the new vertex
+            displacement type supersedes it.</li>
+          <li>add full support for point lights, and use them for stars.</li>
+          <li>true depth-tested close-by stars, also working with light glow
+            enabled.</li>
           </ul>
         <p>Bug Fixes</p>
         <ul>
-          <li>regression where all actions were printed to stdout.</li>
-          <li>unexpected and weird behaviour when spamming repeatedly left buttons in new UI.</li>
-          <li>crash fetching entity elevation due to the focus not being set yet.</li>
+          <li>prevent creation of background blur object, as camera motion blur
+            was disabled a few versions ago.</li>
+          <li>use predicted position for tracking objects.</li>
+          <li>‘reload defaults’ button in visual settings component actually sets
+            the default value to the elevation multiplier slider.</li>
+          <li>new star shader in intel GPUs.</li>
+          <li>mouse coordinates collision with objects when back buffer scale !=
+            1.</li>
+          </ul>
+        <p>Code Refactoring</p>
+        <ul>
+          <li>move GLSL snippet shader chunks to own directory
+            <code>assets/shader/snippet</code>.</li>
+          <li>rename shaders from ‘normal’ to ‘pbr’.</li>
           </ul>
         <p>Build System</p>
         <ul>
-          <li>add check for revision &gt;= 2 in release script.</li>
-          <li>automate creation of HTML downloads table and properly use ‘pkgver’ and ‘pkgrel’ fields in AUR package.</li>
+          <li>set <code>-source</code> to 16 in gradle build script to enable
+            pattern matching in instanceof.</li>
           </ul>
         </description>
       </release>
