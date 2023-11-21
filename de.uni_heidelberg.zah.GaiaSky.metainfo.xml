@@ -26,34 +26,25 @@
 
   <releases>
 
-    <release version="3.5.7" date="2023-11-07" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.7.9d7eedd2e/releasenotes.html</url>
+    <release version="3.5.7-2" date="2023-11-21" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.7-2.987bbd941/releasenotes.html</url>
       <description>
         <p>Features</p>
         <ul>
-          <li>add surface exploration mode for planets, where the camera moves relative to the position of the pointer when close to a planet or moon.</li>
-          <li>add floating-point completion rates to billboard datasets.</li>
-          <li>combine SSR with cubemap reflections to fill in parts that reflect to off-screen locations.</li>
-          <li>add Debian build files. Add Makefile. Add <code>createDebian</code> task to gradle build script.</li>
-          <li>updated Bulgarian translation</li>
+          <li>display stars with missing radial velocity information as ‘N/A’ instead of 0. This requires a re-generation of the catalogs.</li>
+          <li>add oblateness to sphere parameters.</li>
+          <li>artificially increase the number of labels setting in star groups of compact octrees (fewer than 3 nodes).</li>
+          <li>enable <code>numLabels</code> attribute for star set objects in order to control the number of labels rendered for a given star set.</li>
+          <li>add script to generate gitstats from repository.</li>
           </ul>
         <p>Bug Fixes</p>
         <ul>
-          <li>crash when enabling ‘Others’ component type at startup in VR.</li>
-          <li>sizing of datasets scroll pane with expand/collapse groups is incorrect in some instances.</li>
-          <li>add free space check before downloads, and clean up properly after a failed extraction operation.</li>
-          <li>auto-scroll to target when cycling through UI elements with gamepad left stick. Selection and action with gamepad in dataset manager window.</li>
-          <li>zero-length keyframed path crashes the ‘normalize times’ action.</li>
-          <li>add missing, untranslated strings to I18N files.</li>
-          <li>start and dataset manager buttons do not scale horizontally with content.</li>
-          <li>ascending node parameter in rotation component does not apply correctly. Bump source version to 3.5.7, for new data is needed.</li>
-          <li>recursive tile lookup in sparse virtual textures module does not work correctly.</li>
-          <li>prevent SVT level overflows, and prompt for restart when tile cache size is modified in preferences.</li>
-          <li>remove custom amount of vertical scroll in scroll panes. Scrolling should now be much easier.</li>
-          </ul>
-        <p>Build System</p>
-        <ul>
-          <li>upgrade to LibGDX 1.12.1 and LWJGL 3.3.3.</li>
+          <li>restore octree drawing functionality.</li>
+          <li>always initialize star group sorting data (not only if ‘numLabels’ = 0), otherwise the system may crash, for it is used elsewhere for other purposes.</li>
+          <li>check active list in star set exists before using.</li>
+          <li>free XR events after using them.</li>
+          <li>make sure that a mesh exists before disposing.</li>
+          <li>rename <code>scene::star::group::numLabel</code> configuration property to <code>scene::star::group::numLabels</code>.</li>
           </ul>
         </description>
       </release>
