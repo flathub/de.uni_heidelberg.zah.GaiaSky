@@ -26,26 +26,19 @@
 
   <releases>
 
-    <release version="3.5.7-2" date="2023-11-21" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.7-2.987bbd941/releasenotes.html</url>
+    <release version="3.5.7-3" date="2023-11-29" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.7-3.8be0b0add/releasenotes.html</url>
       <description>
-        <p>Features</p>
-        <ul>
-          <li>display stars with missing radial velocity information as ‘N/A’ instead of 0. This requires a re-generation of the catalogs.</li>
-          <li>add oblateness to sphere parameters.</li>
-          <li>artificially increase the number of labels setting in star groups of compact octrees (fewer than 3 nodes).</li>
-          <li>enable <code>numLabels</code> attribute for star set objects in order to control the number of labels rendered for a given star set.</li>
-          <li>add script to generate gitstats from repository.</li>
-          </ul>
         <p>Bug Fixes</p>
-        <ul>
-          <li>restore octree drawing functionality.</li>
-          <li>always initialize star group sorting data (not only if ‘numLabels’ = 0), otherwise the system may crash, for it is used elsewhere for other purposes.</li>
-          <li>check active list in star set exists before using.</li>
-          <li>free XR events after using them.</li>
-          <li>make sure that a mesh exists before disposing.</li>
-          <li>rename <code>scene::star::group::numLabel</code> configuration property to <code>scene::star::group::numLabels</code>.</li>
-          </ul>
+    <ul>
+      <li>columns corresponding to the same UCD maintain the order of appearance in the source table when used.</li>
+      <li>use concurrent hash set in ‘selecting’ list in the OpenXR input listener to prevent concurrent modification errors.</li>
+      <li>resizing log window does not resize contents.</li>
+      <li>prevent getting name from second closest object if it is invalid.</li>
+      <li>use logical keys instead of key codes by converting GDX’s codes to GLFW, which uses the logical keyboard layout.</li>
+      <li>rename makefile, update build script to detect <code>/opt/gaiasky</code> installation.</li>
+      <li>use default mappings file if the configured one does not exist.</li>
+    </ul>
         </description>
       </release>
     </releases>
