@@ -26,49 +26,15 @@
 
   <releases>
 
-    <release version="3.5.8" date="2024-01-26" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.8.530711afe/releasenotes.html</url>
+    <release version="3.5.8-3" date="2024-01-29" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.8-3.600deaa6a/releasenotes.html</url>
       <description>
-        <p>Features</p>
-    <ul>
-      <li>add bookmarks section in gamepad GUI.</li>
-      <li>cloud shadow projections on the surface of planets, for regular textures, cubemaps and SVT clouds.</li>
-      <li>add new <code>backupSettings()</code> and <code>restoreSettings()</code> API calls to back up and restore the entire settings in Gaia Sky from a script.</li>
-      <li>move ‘star glow over objects’ check box to Scene settings &gt; Stars section.</li>
-      <li>add used, free, allocated and total memory to memory information window in help dialog.</li>
-      <li>enable eclipse outlines (for umbra and penumbra) by default in configuration file.</li>
-      <li>add application-level shader disk cache that stores binary shaders to disk to speed up application startup. Disabled by default, as most GPU drivers already do this on their own.</li>
-      <li>add binary particle group loader/writer to be able to load particles using an own binary format that loads much faster.</li>
-      <li>support <code>PARTICLE_EXT</code> attributes, additionally to the base <code>PARTICLE</code> attributes in the new binary format for particle groups.</li>
-      <li>increase number of divisions in shapes around objects from 15 to 35. Do not cull faces.</li>
-      <li>enable exporting cubemap sides to image files, action bound to <code>F7</code> by default.</li>
-      <li>adjust constants so that the Sun size is accurate.</li>
-    </ul>
-    <p>Bug Fixes</p>
-    <ul>
-      <li>use actual tree map for currently pressed keys in keyboard input controller, so that actions can be retrieved reliably.</li>
-      <li>do not activate surface mode (where the view follows the mouse location) with gamepad input.</li>
-      <li>layout and information in about/help dialog.</li>
-      <li>dataset detection to use dataset key by default instead of name.</li>
-      <li>apply graphics quality after restart. Remove graphics quality update events.</li>
-      <li>graphics quality update is now a ‘needs restart’ operation, otherwise the system crashes trying to load in new parameters, textures and so on.</li>
-      <li>increase constellation and boundaries line width to prevent rastering artifacts.</li>
-      <li>star flickering issues due to quad sizes mended by setting a minimum quad solid angle roughly equal to the pixel size of the back-buffer.</li>
-      <li>tooltips in number validators using the <code>MAX_VALUE</code> or <code>MIN_VALUE</code> should use infinity instead.</li>
-      <li>add orientation to shape dialog (camera, equatorial, ecliptic, galactic).</li>
-      <li>remove all shapes [&amp; around object] actually removes all shapes and not only the first in the list.</li>
-      <li>default to scientific notation only when abs(num) &gt; 9999.</li>
-      <li>possible null pointer exceptions in OpenXR driver.</li>
-      <li>enable breaking string sequences at forward and backward slashes, as well as whitespaces. This prevents overflown content in the error dialog in certain cases.</li>
-      <li>run actual octant update code in the main thread.</li>
-      <li>particle sizing and size limits in the loader.</li>
-    </ul>
-    <p>Performance Improvements</p>
-    <ul>
-      <li>remove unnecessary synchronized blocks from index.</li>
-      <li>use parallel sort instead of regular single-threaded sort for particle and star sets.</li>
-      <li>make sure that unseen stars (i.e. computed final color is 0) do not take up fragment shader resources.</li>
-    </ul>
+        <p>Bug Fixes</p>
+        <ul>
+          <li>number of reported layers by OpenXR driver can be 0, otherwise app does not start.</li>
+          <li>visual settings reset operation implemented in one place only.</li>
+          <li>make sure a focus’ star ancestor exists before trying to get its parenthood in the octree.</li>
+          </ul>
         </description>
       </release>
     </releases>
