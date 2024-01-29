@@ -26,13 +26,14 @@
 
   <releases>
 
-    <release version="3.5.8-2" date="2024-01-29" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.8-2.4fd7a9705/releasenotes.html</url>
+    <release version="3.5.8-3" date="2024-01-29" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.8-3.600deaa6a/releasenotes.html</url>
       <description>
         <p>Bug Fixes</p>
         <ul>
           <li>number of reported layers by OpenXR driver can be 0, otherwise app does not start.</li>
           <li>visual settings reset operation implemented in one place only.</li>
+          <li>make sure a focus’ star ancestor exists before trying to get its parenthood in the octree.</li>
           </ul>
         </description>
       </release>
