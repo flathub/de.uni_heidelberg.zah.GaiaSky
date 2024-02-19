@@ -6,7 +6,7 @@
   <url type="bugtracker">https://codeberg.org/gaiasky/gaiasky/issues</url>
 
   <name>Gaia Sky</name>
-  <summary>Open Source 3D universe simulator for desktop and VR with support for more than a billion objects</summary>
+  <summary>Universe simulator using real data</summary>
 
   <metadata_license>CC-BY-SA-4.0</metadata_license>
   <project_license>MPL-2.0</project_license>
