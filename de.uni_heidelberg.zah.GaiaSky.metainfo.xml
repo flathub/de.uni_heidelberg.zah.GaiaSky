@@ -26,16 +26,33 @@
 
   <releases>
 
-    <release version="3.5.8-3" date="2024-01-29" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.8-3.600deaa6a/releasenotes.html</url>
+    <release version="3.5.9" date="2024-02-19" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.9.51d1305ab/releasenotes.html</url>
       <description>
-        <p>Bug Fixes</p>
-        <ul>
-          <li>number of reported layers by OpenXR driver can be 0, otherwise app does not start.</li>
-          <li>visual settings reset operation implemented in one place only.</li>
-          <li>make sure a focus’ star ancestor exists before trying to get its parenthood in the octree.</li>
-          </ul>
         </description>
+    <p>Features</p>
+    <ul>
+      <li>add support for arbitrary affine transformations to datasets, and add controls to create and edit them in the datasets pane.</li>
+      <li>separate filters from dataset preferences into their own button/window in datasets pane.</li>
+      <li>improve layout of the filters window by moving the ‘add’ button to the top and adding a scroll pane in the content.</li>
+      <li>improve default window skin by adding some padding and a better sprite.</li>
+      <li>rename dataset preferences to dataset visual settings. It now contains some sliders to modify the point size and the min/max solid angles. It does not contain filters or dataset information anymore, as those were extracted to their own dialogs.</li>
+      <li>add affine transformations to all datasets (particle group, star group, variable star group, billboard group, orbit elements group). These transformations are applied in the shaders so that they can be updated on the fly. The billboard group object has been moved inside the generic catalog archetype; the Milky Way appears as a dataset now.</li>
+      <li>add min/max particle solid angle size and number of labels to particle dataset load dialog.</li>
+      <li>add support for additional texture(s) in raymarching shaders.</li>
+      <li>do not force safe mode on Macs powered by apple silicon anymore.</li>
+    </ul>
+    <p>Bug Fixes</p>
+    <ul>
+      <li>remove support for cloud SVT shadows, as this necessitates the cloud SVT and the diffuse SVT to be exactly the same (same depth, same available tiles, etc.), and this is not <em>usually</em> the case.</li>
+      <li>concurrency error in procedural generation progress bar update actions.</li>
+      <li>present filter results in dataset manager in expanded panes.</li>
+      <li>prevent the creation of multiple dataset preferences window for the same dataset.</li>
+      <li>prevent NPE crash during the creation of the error dialog.</li>
+      <li>prevent null pointer when updating star sets.</li>
+      <li>typo in French translation.</li>
+      <li>appimage actually includes unpacked JRE distribution correctly.</li>
+    </ul>
       </release>
     </releases>
 
