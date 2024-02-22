@@ -20,14 +20,14 @@
 
   <description>
     <p>
-      Gaia Sky is a real-time, 3D, astronomy visualisation software for desktop and VR that runs on Linux, Windows and macOS. It is developed in the framework of ESA&apos;s Gaia mission to chart about 1 billion stars of our Galaxy in the Gaia group of the Astronomisches Rechen-Institut (ZAH, Universität Heidelberg). Explore the Solar System, the Milky Way or even the most distant galaxies of the Universe.
+      Gaia Sky is a real-time, 3D, astronomy visualisation platform for desktop and VR that runs on Linux, Windows and macOS. It is developed in the framework of ESA&apos;s Gaia mission to chart about 1 billion stars of our Galaxy in the Gaia group of the Astronomisches Rechen-Institut (ZAH, Universität Heidelberg). Explore the Solar System, the Milky Way or even the most distant galaxies of the Universe.
       </p>
     </description>
 
   <releases>
 
     <release version="3.5.9" date="2024-02-19" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.9.51d1305ab/releasenotes.html</url>
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.5.9-2.422e5e11c/releasenotes.html</url>
       <description>
     <ul>
       <li>add support for arbitrary affine transformations to datasets.</li>
@@ -36,6 +36,7 @@
       <li>improve default window skin.</li>
       <li>add min/max particle solid angle size and number of labels to particle dataset load dialog.</li>
       <li>add support for additional texture(s) in raymarching shaders.</li>
+      <li>fix individual object visibility API calls.</li>
     </ul>
         </description>
       </release>
