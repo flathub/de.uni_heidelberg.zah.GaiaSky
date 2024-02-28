@@ -13,6 +13,8 @@ finish-args:
   - --env=PATH=/app/bin:/app/jre/bin:/usr/bin
   - --env=JAVA_HOME=/app/jre
 modules:
+  - pypi-dependencies.yaml
+
   - name: openjdk
     buildsystem: simple
     build-commands: [/usr/lib/sdk/openjdk17/install.sh]
@@ -27,6 +29,8 @@ modules:
        - cp -R lib/* /app/bin/lib/
        - cp -R mappings/* /app/bin/mappings/
        - cp -R scripts/* /app/bin/scripts/
+       - mkdir -p /app/bin/extra
+       - cp -R extra/* /app/bin/extra/optflowcam/
        - rm /app/bin/lib/*-macos.jar
        - rm /app/bin/lib/*-windows.jar
        - install -D gs_icon.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
@@ -35,8 +39,8 @@ modules:
        - install -D de.uni_heidelberg.zah.GaiaSky.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
     sources:
       - type: archive
-        url: https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.5.9-2.422e5e11c/gaiasky-3.5.9-2.422e5e11c.tar.gz
-        sha256: 9bf4bc9620b5b7ffda51ad6973e714cc7f3722007cdee05450b9b9d8d6607f30
+        url: file:///home/tsagrista/Projects/gaiasky/releases/packages-3.5.9-2.9d0e1b14c/gaiasky-3.5.9-2.9d0e1b14c.tar.gz
+        sha256: c58e12ea099d6393f0f090290549ccb6e381ac3ca8520bdba83e1dbae26b5362
       - type: file
         path: de.uni_heidelberg.zah.GaiaSky.desktop
       - type: file
