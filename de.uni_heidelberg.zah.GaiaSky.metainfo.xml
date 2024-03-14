@@ -26,19 +26,30 @@
 
   <releases>
 
-    <release version="3.6.0" date="2024-03-12" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.6.0.afdd9547d/releasenotes.html</url>
+    <release version="3.6.0-2" date="2024-03-14" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.6.0-2.4479175dc/releasenotes.html</url>
       <description>
-    <ul>
-      <li>add OptFlowCam (Piotrowski 2024) method to interpolate between keyframes.</li>
-      <li>add B-splines as interpolation method.</li>
-      <li>separate API calls for transitions in position, orientation and time.</li>
-      <li>add smooth curves to transitions using logit and logistic sigmoid.</li>
-      <li>enable local data in the '+ Info' window.</li>
-      <li>rename 'star systems' type to 'exoplanets &amp; star systems'.</li>
-      <li>add various useful API calls.</li>
-      <li>many bug fixes.</li>
-    </ul>
+        <p>News in patch 3.6.0-2:</p>
+        <ul>
+          <li>annotate camera files with frame rate so that playback can adjust it automatically.</li>
+          <li>camcorder play and record button inconsistent states.</li>
+          <li>state handling in the camcorder.</li>
+          <li><code>sleep(seconds)</code> call also respects the camcorder FPS setting during recording.</li>
+          <li>rename some API calls, deprecate old versions.</li>
+          <li>add companion calls for camera orientation and position transitions.</li>
+          <li>orbit coordinate not working when time is before the orbit start.</li>
+          </ul>
+        <p>News in main 3.6.0:</p>
+        <ul>
+          <li>add OptFlowCam (Piotrowski 2024) method to interpolate between keyframes.</li>
+          <li>add B-splines as interpolation method.</li>
+          <li>separate API calls for transitions in position, orientation and time.</li>
+          <li>add smooth curves to transitions using logit and logistic sigmoid.</li>
+          <li>enable local data in the '+ Info' window.</li>
+          <li>rename 'star systems' type to 'exoplanets &amp; star systems'.</li>
+          <li>add various useful API calls.</li>
+          <li>many bug fixes.</li>
+          </ul>
         </description>
       </release>
     </releases>
