@@ -26,9 +26,13 @@
 
   <releases>
 
-    <release version="3.6.0-2" date="2024-03-14" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.6.0-2.4479175dc/releasenotes.html</url>
+    <release version="3.6.0-3" date="2024-03-15" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/files/releases/3.6.0-3.fb7b7a553/releasenotes.html</url>
       <description>
+        <p>News in patch 3.6.0-3:</p>
+        <ul>
+          <li>fix back-buffer scale initialization issue at first startup that corrupted star rendering.</li>
+          </ul>
         <p>News in patch 3.6.0-2:</p>
         <ul>
           <li>annotate camera files with frame rate so that playback can adjust it automatically.</li>
