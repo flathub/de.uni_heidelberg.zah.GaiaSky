@@ -26,24 +26,19 @@
 
   <releases>
 
-    <release version="3.6.1" date="2024-05-29" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.1.f3a379a3d/releasenotes.html</url>
+    <release version="3.6.2" date="2024-06-05" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.2.1b1e23dbb/releasenotes.html</url>
       <description>
-        <p>New features in release 3.6.1:</p>
+        <p>New features and bug fixes:</p>
         <ul>
-          <li>add ‘saturation’ value to settings (under stars) to control the star saturation factor.</li>
-          <li>display effective temperature of body in camera info interface.</li>
-          <li>add spectral type to camera info interface, computed for stars from the effective temperature.</li>
-          <li>camera motion blur re-implementation using a pure post-processing approach, where the pixel positions are reconstructed from the depth buffer and the current and previous camera states. This does not require the velocity buffer anymore, so it is much faster. Add motion blur slider to regular and gamepad preferences.</li>
-          <li>add LVLH (local vertical local horizontal) attitude server, for objects like the ISS.</li>
-          <li>add label bias attribute to label component to provide a way to artificially move the point at which the object’s label is rendered.</li>
-          <li>improve UV grids so that their line width stays constant, they get subdivided when changing the field of view, and they get coordinates on the window frame.</li>
-          <li>improve recursive grid with constant-width lines and better distance value labels.</li>
-          <li>add option to display the time in no-UI mode (enter with Ctrl+U), and add checkbox to toggle setting in preferences dialog.</li>
-          <li>add support for binary file-backed VSOP87, and update data files. Needs update of base data package. Add versioning to bookmarks file.</li>
-          <li>add display information to help window, system tab.</li>
-          <li>add script to test object quaternion slerp provider.</li>
-          <li>add script to test camera orientation API calls that use quaternions.</li>
+          <li>enable ray-marching effects in stereoscopic mode.</li>
+          <li>use a new instance of the preferences dialog each time it is open, so that all preferences are reinitialized correctly.</li>
+          <li>invert-x/-y button in gamepad GUI does not work/update correctly.</li>
+          <li>ray-marching effects in cubemap modes. Probably a source of unforeseen consequences.</li>
+          <li>remove blank frame produced when activating a ray-marching effect for the first time.</li>
+          <li>never skip future closest body position computation.</li>
+          <li>restore light glow effect in cubemap modes (360, planetarium, orthosphere).</li>
+          <li>restore light glow effect in stereoscopic mode.</li>
           </ul>
         </description>
       </release>
