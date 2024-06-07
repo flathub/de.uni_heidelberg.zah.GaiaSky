@@ -26,8 +26,8 @@
 
   <releases>
 
-    <release version="3.6.2-2" date="2024-06-06" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.2-2.c12559806/releasenotes.html</url>
+    <release version="3.6.2-3" date="2024-06-07" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.2-3.d5632974f/releasenotes.html</url>
       <description>
         <p>New features and bug fixes:</p>
         <ul>
@@ -38,6 +38,7 @@
           <li>enable ray-marching effects in cubemap and stereoscopic mode.</li>
           <li>restore light glow effect in cubemap and stereoscopic modes.</li>
           <li>fix regression on some graphics drivers where the app crashed compiling a shader.</li>
+          <li>fix SVT indirection shader cleared with wrong value.</li>
           </ul>
         </description>
       </release>
