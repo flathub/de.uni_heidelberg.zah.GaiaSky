@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>de.uni_heidelberg.zah.GaiaSky</id>
+ <id>de.uni_heidelberg.zah.GaiaSky</id>
   <url type="homepage">https://zah.uni-heidelberg.de/gaia/outreach/gaiasky/</url>
   <url type="help">https://gaia.ari.uni-heidelberg.de/gaiasky/docs</url>
   <url type="bugtracker">https://codeberg.org/gaiasky/gaiasky/issues</url>
@@ -26,19 +26,17 @@
 
   <releases>
 
-    <release version="3.6.2-3" date="2024-06-07" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.2-3.d5632974f/releasenotes.html</url>
+             <release version="3.6.3" date="2024-07-12" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.3.929b0f7a6/releasenotes.html</url>
       <description>
-        <p>New features and bug fixes:</p>
+        <p>New features in this version:</p>
         <ul>
-          <li>use a new instance of the preferences dialog each time it is open, so that all preferences are reinitialized correctly.</li>
-          <li>invert-x/-y button in gamepad GUI does not work/update correctly.</li>
-          <li>remove blank frame produced when activating a ray-marching effect for the first time.</li>
-          <li>never skip future closest body position computation.</li>
-          <li>enable ray-marching effects in cubemap and stereoscopic mode.</li>
-          <li>restore light glow effect in cubemap and stereoscopic modes.</li>
-          <li>fix regression on some graphics drivers where the app crashed compiling a shader.</li>
-          <li>fix SVT indirection shader cleared with wrong value.</li>
+          <li>big update for exoplanets, with on-demand background loading and new GPU-based procedural generation.</li>
+          <li>automatic DPI scaling to support multi-DPI configurations.</li>
+          <li>add new graphical presets (low, medium, high) to settings dialog.</li>
+          <li>improve camera velocity display units in camera info pane.</li>
+          <li>enable multiple lights (and also point lights) for cloud shader.</li>
+          <li>add ‘refreshRate’ to orbit objects to control how often they are updated (if needed), add button to camera info interface to refresh the orbit of the selected object.</li>
           </ul>
         </description>
       </release>
