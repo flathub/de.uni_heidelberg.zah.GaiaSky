@@ -26,11 +26,12 @@
 
   <releases>
 
-             <release version="3.6.3" date="2024-07-12" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.3.929b0f7a6/releasenotes.html</url>
+             <release version="3.6.3-2" date="2024-07-17" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.3-2.5dd63b3c7/releasenotes.html</url>
       <description>
         <p>New features in this version:</p>
         <ul>
+          <li>new star surface shader.</li>
           <li>big update for exoplanets, with on-demand background loading and new GPU-based procedural generation.</li>
           <li>automatic DPI scaling to support multi-DPI configurations.</li>
           <li>add new graphical presets (low, medium, high) to settings dialog.</li>
