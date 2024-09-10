@@ -5,6 +5,11 @@
   <url type="help">https://gaia.ari.uni-heidelberg.de/gaiasky/docs</url>
   <url type="bugtracker">https://codeberg.org/gaiasky/gaiasky/issues</url>
 
+  <branding>
+    <color type="primary" scheme_preference="light">#49AE21</color>
+    <color type="primary" scheme_preference="dark">#296013</color>
+  </branding>
+
   <name>Gaia Sky</name>
   <summary>Explore the universe in 3D</summary>
 
