@@ -6,8 +6,8 @@
   <url type="bugtracker">https://codeberg.org/gaiasky/gaiasky/issues</url>
 
   <branding>
-    <color type="primary" scheme_preference="light">#49AE21</color>
-    <color type="primary" scheme_preference="dark">#296013</color>
+    <color type="primary" scheme_preference="light">#433316</color>
+    <color type="primary" scheme_preference="dark">#d0b98f</color>
   </branding>
 
   <name>Gaia Sky</name>
