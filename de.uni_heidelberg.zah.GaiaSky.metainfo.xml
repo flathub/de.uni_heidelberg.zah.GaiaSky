@@ -15,7 +15,7 @@
 
   <metadata_license>CC-BY-SA-4.0</metadata_license>
   <project_license>MPL-2.0</project_license>
-  <developer_name>ARI/Zentrum für Astronomie Heidelberg</developer_name>
+  <developer_name>Zentrum für Astronomie der Universität Heidelberg</developer_name>
 
   <recommends>
     <control>pointing</control>
@@ -25,7 +25,7 @@
 
   <description>
     <p>
-      Gaia Sky is a real-time, 3D, astronomy visualisation platform for desktop and VR that runs on Linux, Windows and macOS. It is developed in the framework of ESA&apos;s Gaia mission to chart about 1 billion stars of our Galaxy in the Gaia group of the Astronomisches Rechen-Institut (ZAH, Universität Heidelberg). Explore the Solar System, the Milky Way or even the most distant galaxies of the Universe.
+      Gaia Sky is an astronomy visualisation platform for desktop and VR that runs on Linux, Windows and macOS. It is developed in the framework of ESA&apos;s Gaia mission to chart about 1 billion stars of our Galaxy in the Gaia group of the Astronomisches Rechen-Institut (ZAH, Universität Heidelberg). Explore the Solar System, the Milky Way, and even the most distant galaxies of our Universe with up-to-date, real scientific data.
       </p>
     </description>
 
@@ -36,13 +36,13 @@
       <description>
         <p>New features in this version:</p>
         <ul>
-          <li>new star surface shader.</li>
-          <li>big update for exoplanets, with on-demand background loading and new GPU-based procedural generation.</li>
-          <li>automatic DPI scaling to support multi-DPI configurations.</li>
-          <li>add new graphical presets (low, medium, high) to settings dialog.</li>
-          <li>improve camera velocity display units in camera info pane.</li>
-          <li>enable multiple lights (and also point lights) for cloud shader.</li>
-          <li>add ‘refreshRate’ to orbit objects to control how often they are updated (if needed), add button to camera info interface to refresh the orbit of the selected object.</li>
+          <li>New star surface shader.</li>
+          <li>Big update for exoplanets, with on-demand background loading and new GPU-based procedural generation.</li>
+          <li>Automatic DPI scaling to support multi-DPI configurations.</li>
+          <li>Add new graphical presets (low, medium, high) to settings dialog.</li>
+          <li>Improve camera velocity display units in camera info pane.</li>
+          <li>Enable multiple lights (and also point lights) for cloud shader.</li>
+          <li>Add ‘refreshRate’ to orbit objects to control how often they are updated (if needed), add button to camera info interface to refresh the orbit of the selected object.</li>
           </ul>
         </description>
       </release>
