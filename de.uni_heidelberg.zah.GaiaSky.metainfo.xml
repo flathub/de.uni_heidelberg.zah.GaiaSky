@@ -54,7 +54,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>Rendering of Earth's surface, clouds and atmosphere</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00001.jpg</image>
+      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20240926/00013.jpg</image>
       </screenshot>
     <screenshot>
       <caption>View of Saturn and its rings</caption>
@@ -101,24 +101,12 @@
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20240926/00011.jpg</image>
       </screenshot>
     <screenshot>
-      <caption>Earth and Moon</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230327/00002.jpg</image>
-      </screenshot>
-    <screenshot>
       <caption>The International Space Station</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20240926/00012.jpg</image>
       </screenshot>
     <screenshot>
       <caption>The Milky Way</caption>
       <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20231002/00008.jpg</image>
-      </screenshot>
-    <screenshot>
-      <caption>Exploring Mars in Virtual Reality</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230303/00007.jpg</image>
-      </screenshot>
-    <screenshot>
-      <caption>Close to Gaia in Virtual Reality</caption>
-      <image>https://gaia.ari.uni-heidelberg.de/gaiasky/files/screenshots/20230303/00006.jpg</image>
       </screenshot>
     </screenshots>
   </component>
