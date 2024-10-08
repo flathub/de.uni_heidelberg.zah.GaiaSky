@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
- <id>de.uni_heidelberg.zah.GaiaSky</id>
+  <id>de.uni_heidelberg.zah.GaiaSky</id>
   <url type="homepage">https://zah.uni-heidelberg.de/gaia/outreach/gaiasky/</url>
   <url type="help">https://gaia.ari.uni-heidelberg.de/gaiasky/docs</url>
   <url type="bugtracker">https://codeberg.org/gaiasky/gaiasky/issues</url>
@@ -8,7 +8,7 @@
   <branding>
     <color type="primary" scheme_preference="light">#433316</color>
     <color type="primary" scheme_preference="dark">#d0b98f</color>
-  </branding>
+    </branding>
 
   <name>Gaia Sky</name>
   <summary>Explore the universe in 3D</summary>
@@ -31,18 +31,21 @@
 
   <releases>
 
-             <release version="3.6.3-2" date="2024-07-17" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.3-2.5dd63b3c7/releasenotes.html</url>
+    <release version="3.6.4" date="2024-10-08" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.4.431291e37/releasenotes.html</url>
       <description>
-        <p>New features in this version:</p>
+        <p>New features and bug fixes in this version:</p>
         <ul>
-          <li>New star surface shader.</li>
-          <li>Big update for exoplanets, with on-demand background loading and new GPU-based procedural generation.</li>
-          <li>Automatic DPI scaling to support multi-DPI configurations.</li>
-          <li>Add new graphical presets (low, medium, high) to settings dialog.</li>
-          <li>Improve camera velocity display units in camera info pane.</li>
-          <li>Enable multiple lights (and also point lights) for cloud shader.</li>
-          <li>Add ‘refreshRate’ to orbit objects to control how often they are updated (if needed), add button to camera info interface to refresh the orbit of the selected object.</li>
+          <li>add location markers to pinpoint the exact position of each location. Add custom marker textures and custom label and marker colors.</li>
+          <li>add new attribute to locations, <code>ignoreSolidAngleLimit</code>, which disregards the limits when computing visibility. Cap angular sizes for all locations.</li>
+          <li>add location type attribute to location objects. This attribute is used to categorize locations by groups in the individual visibility window. Remove ‘cosmic locations’ content type, and move it to regular locations (requires default data pack update.).</li>
+          <li>separate scene frame buffer from meta-elements rendering (labels, lines, etc.) to be able to apply different post-processing effects to each.</li>
+          <li>add an implementation of console/terminal, which accepts commands to interact directly with the Gaia Sky API. Use <code>~</code> or <code>:</code> to launch the console.</li>
+          <li>add a generic map in the base component to store ‘unrecognized’ attributes; these get displayed in the object info window.</li>
+          <li>improve on-screen keyboard in controller UI.</li>
+          <li>add session type (X11, Wayland) to system information (Linux only).</li>
+          <li>prevent virtual objects (hooks, invisibles, catalogs, etc.) from appearing in the individual visibility window. Hide meta-components (atmospheres, keyframes, etc.) from buttons list. Fix layout.</li>
+          <li>always load HIP numbers if present in the STIL data loader, even if there are other identifiers.</li>
           </ul>
         </description>
       </release>
