@@ -40,7 +40,7 @@ modules:
     sources:
       - type: archive
         url: https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.4-2.3bfeec0f9/gaiasky-3.6.4-2.3bfeec0f9.tar.gz
-        sha256: c3744a2009bb3c9ad9862122fa0fb0608fec9909568e29741a9f7c5d9de0b9e1
+        sha256: 960110fbdcdab407cd7165eb06cad88ce1cb4c5e919c09d4573af7621e80fba3
       - type: file
         path: de.uni_heidelberg.zah.GaiaSky.desktop
       - type: file
