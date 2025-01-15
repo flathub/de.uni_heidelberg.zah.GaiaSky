@@ -31,13 +31,33 @@
 
   <releases>
 
-    <release version="3.6.4-2" date="2024-10-17" urgency="high">
-      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.4-2.3bfeec0f9/releasenotes.html</url>
+    <release version="3.6.5" date="2025-01-15" urgency="high">
+      <url>https://gaia.ari.uni-heidelberg.de/gaiasky/releases/3.6.5.a7ae14f4d/releasenotes.html</url>
       <description>
-        <p>Bug fixes in this version:</p>
-        <ul>
-          <li>external view feature not activating correctly with the flag <code>--externalview</code>.</li>
-        </ul>
+  <p>Features:</p>
+  <ul>
+    <li>add support for volume rendering. The infrastructure is in place with an new archetype <code>Volume</code>. This is necessary for the new volumetric aurora dataset and volume nebulae in NGC2000.</li>
+    <li>add ‘volumes and effects’ catalog type.</li>
+    <li>enable <code>"flip"</code> attribute for <code>box</code>es/<code>cube</code>s in mesh builders.</li>
+    <li>add <code>"cameraCollision"</code> attribute to bodies.</li>
+    <li>shader include statement now supports targets in datasets.</li>
+    <li>add on-demand re-compilation of post-processing shaders from their source files, in runtime.</li>
+    <li>add new attribute ‘renderLabel’ to label component. This enables/disables the actual rendering of the label.</li>
+    <li>increase default quality of FXAA filter, provide a simpler implementation (disabled by default), and enable hot shader reloading for FXAA effect.</li>
+    <li>update Gaia Sky icon.</li>
+    <li>add bluesky link to readme file and about page.</li>
+  </ul>
+  <p>Bug Fixes:</p>
+  <ul>
+    <li>position of context menu in dataset manager is off.</li>
+    <li>unknown dataset types crash Gaia Sky.</li>
+    <li>do not crash when reloading non-compiling glsl shaders.</li>
+    <li>prevent non-focusable objects to appear in search results and to be set as camera focus.</li>
+    <li>enable atmosphere/cloud procedural generation even when the surface is disabled due to cubemaps being used.</li>
+    <li>do not attempt setting a window icon in Wayland, it is not supported and results in a (harmless) crash.</li>
+    <li>position tracking does not work with objects in orbital elements group.</li>
+    <li>correctly populate window width and height in preferences dialog.</li>
+  </ul>
         </description>
       </release>
     </releases>
